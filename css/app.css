@@ -3,6 +3,65 @@
 }
 
 /*
+==========================
+        contact me
+==========================
+*/
+
+#contact {
+    background-color: #AD343E;
+}
+form {
+    max-width: 48%;
+    margin: 7% 5% 7% 20%;
+}
+form h5 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+.feedback-input {
+    color: #171A21;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: #fff;
+    border: 2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 3%;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+.feedback-input:focus {
+    border: 2px solid #CC4949;
+}
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+[type="submit"] {
+    width: 100%;
+    background: #CC6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+[type="submit"]:hover {
+    background: #CC4949;
+}
+
+/*
 ===========================
         footer
 ===========================
@@ -11,16 +70,16 @@
 .footer {
     background-color: #171A21;
     margin: 0 0 0 0;
-    padding: 5% 5% 5% 5%;
+    padding: 10% 5% 10% 5%;
 }
 .footer i {
-    padding: 3% 3% 3% 3%;
+    padding: 7.5% 3% 7% 3%;
     color: #617073;
 }
 .footer p {
     color: #617073;
     margin-left: 5%;
-    padding: 0 3% 3% 3%;
+    padding: 10% 3% 10% 3%;
     font-size: 20px;
     font-weight: 300;
 }
