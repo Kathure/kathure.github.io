@@ -1,0 +1,239 @@
+body {
+    position: relative;
+    font-family: 'Poiret One', fantasy;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poiret One', sans-serif
+}
+.row {
+    max-width: 1400px;
+}
+
+/*
+============================
+navigation
+===========================
+*/
+
+.menu {
+    font-size: 20px;
+    font-weight: 400;
+    float: right;
+    background-color: #000;
+    opacity: 0.6;
+    position: fixed;
+}
+.menu li img {
+    /*    padding-right: 30%;*/
+}
+.menu a {
+    color: #EAFFDA;
+}
+
+/*
+================================
+hero
+===================================
+*/
+
+.container {
+    background-image: url(../assets/pphoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+#hero {
+    position: relative;
+    background-color: black;
+    opacity: 0.6;
+}
+*/
+
+.hero p {
+    font-size: 60px;
+    font-weight: 800;
+    padding-top: 40%;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40%;
+}
+
+/*
+==================================
+about
+=================================
+*/
+
+.main content {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+#about {
+    position: relative;
+    background-color: black;
+    opacity: 0.6;
+}
+*/
+
+#about h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+#about p {
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+/*
+===============================
+portfolio
+==============================
+*/
+
+.portfolio {
+    background-color: #494949;
+}
+.portfolio img {
+    border-radius: 5px 20px 5px;
+    border: 1px solid #666;
+    padding: 5 5%;
+    margin: 5% 5%;
+}
+.portfolio h3 {
+    color: #fff;
+}
+#right img {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+/*
+===================================
+footer and contact form
+===================================
+*/
+
+.row.wide {
+    max-width: rem-calc(1200);
+}
+.contact-footer {
+    background-color: #000;
+    padding: 3.5rem 0;
+}
+.contact-footer .round-inputs input {
+    border-radius: 1000px;
+    background-color: #fff;
+    color: black;
+    height: 3.3125rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+.contact-footer .round-inputs textarea {
+    border-radius: 30px;
+    background-color: #fff;
+    height: 8rem;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+}
+.contact-footer h4 {
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 0.25rem;
+}
+.contact-footer h4.phone {
+    margin-bottom: 3rem;
+}
+.contact-footer h4.phone:before {
+    font-family: "foundation-icons";
+    content: "\f1f8";
+    font-weight: 300;
+    padding-top: 0.2rem;
+    font-size: 2rem;
+    color: #000;
+    padding-left: 0.5rem;
+    padding-right: 1.65rem;
+    /*
+    -webkit-text-fill-color: transparent;
+    Will override color (regardless of order) -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+*/
+}
+@media only screen and (max-width: 40em) {
+    .contact-footer h4.phone {
+        font-size: 0.875rem;
+    }
+}
+.contact-footer h4.email:before {
+    font-family: "foundation-icons";
+    content: "\f16d";
+    font-weight: 300;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    color: #000;
+    padding-left: 0.5rem;
+    padding-right: 1.55rem;
+    /*
+    -webkit-text-fill-color: transparent;
+     Will override color (regardless of order) 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+*/
+}
+.contact-footer h4.location:before {
+    font-family: "foundation-icons";
+    content: "\f172";
+    font-weight: 300;
+    padding-top: 0.2rem;
+    font-size: 2rem;
+    color: #000;
+    padding-left: 0.5rem;
+    padding-right: 1.85rem;
+    
+    -webkit-text-fill-color: transparent;
+     Will override color (regardless of order) 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+
+}
+.contact-footer p {
+    color: #000;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 3.5rem;
+}
+
+/*
+=======================
+submit button
+======================
+*/
+
+.contact-footer .button {
+    border: 2px solid #494949;
+    color: #a9a9a9;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.contact-footer .button:hover {
+    background: #494949;
+    border: 2px solid #a9a9a9;
+    color: #fff;
+}
+
