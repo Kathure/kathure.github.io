@@ -3,6 +3,29 @@
 }
 
 /*
+===========================
+        footer
+===========================
+*/
+
+.footer {
+    background-color: #171A21;
+    margin: 0 0 0 0;
+    padding: 10% 5% 10% 5%;
+}
+.footer i {
+    padding: 7.5% 3% 7% 3%;
+    color: #617073;
+}
+.footer p {
+    color: #617073;
+    margin-left: 5%;
+    padding: 10% 3% 10% 3%;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*
 ==========================
         contact me
 ==========================
@@ -59,27 +82,4 @@ textarea {
 }
 [type="submit"]:hover {
     background: #CC4949;
-}
-
-/*
-===========================
-        footer
-===========================
-*/
-
-.footer {
-    background-color: #171A21;
-    margin: 0 0 0 0;
-    padding: 10% 5% 10% 5%;
-}
-.footer i {
-    padding: 7.5% 3% 7% 3%;
-    color: #617073;
-}
-.footer p {
-    color: #617073;
-    margin-left: 5%;
-    padding: 10% 3% 10% 3%;
-    font-size: 20px;
-    font-weight: 300;
 }
