@@ -1,7 +1,14 @@
-$(document).foundation()
-$('.nav-button').on('click', function () {
-    $('nav').toggleClass('nav-closed');
-});
-$(".toggle-icon").click(function () {
-    $('.nav-button').toggleClass("pushed");
+$(function () {
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
 });
