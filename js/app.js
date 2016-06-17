@@ -12,3 +12,10 @@ $(function () {
         }
     });
 });
+
+
+$(document).ready(function () {
+    setTimeout(function () {
+        $("#landing").removeClass("is-loading");
+    }, 100)
+});
