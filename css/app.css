@@ -1,215 +1,225 @@
-.row {
-    max-width: 1350px;
-}
-
-/*
+																																				.fixed {
+																																				    position: fixed;
+																																				    top: 0;
+																																				    height: 70px;
+																																				    z-index: 1;
+																																				}
+																																				.row {
+																																				    max-width: 1350px;
+																																				}
+																																				/*
 ===========================
         navigation
 ===========================
 */
-
-
-/*
+																																				
+																																				nav {
+																																				    position: absolute;
+																																				    bottom: 0;
+																																				    width: 100%;
+																																				    height: 70px;
+																																				    background: #AD343E;
+																																				}
+																																				nav li {
+																																				    display: inline-block;
+																																				    padding: 24px 10px;
+																																				}
+																																				nav li a {
+																																				    color: #fff;
+																																				    text-transform: uppercase;
+																																				}
+																																				@media only screen and (max-width: 520px) {
+																																				    nav li {
+																																				        padding: 24px 4px;
+																																				    }
+																																				    nav li a {
+																																				        font-size: 14px;
+																																				    }
+																																				}
+																																				/*
 ===========================
         landing
 ===========================
 */
-
-#landing {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 100%, transparent), url(../assets/pphoto.jpg);
-    background-size: cover, cover;
-    background-position: center, center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu {
-    font-size: 25px;
-    float: left;
-}
-.menu a {
-    color: #fff;
-}
-h1 {
-    color: #fff;
-    font-size: 2rem;
-    display: inline-block;
-    padding: 1rem;
-    font-weight: 400;
-    position: relative;
-    opacity: 1;
-    transform: scale(1);
-    transition: transform 0.5s ease, opacity 1s ease;
-}
-.is-loading h1 {
-    transform: scale(0.9);
-    opacity: 0;
-}
-h1:before,
-h1:after {
-    height: 2px;
-    width: 100%;
-    content: "";
-    background: white;
-    display: block;
-    position: absolute;
-    transition: width 0.4s ease;
-    transition-delay: 0.8s;
-}
-h1:before {
-    top: 0;
-    left: 0;
-}
-h1:after {
-    bottom: 0;
-    right: 0;
-}
-.is-loading h1:before,
-.is-loading h1:after {
-    width: 0;
-}
-p {
-    font-size: 1rem;
-    font-weight: 200;
-    color: #fff;
-}
-
-/*
+																																				
+																																				#landing {
+																																				    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66) 100%, transparent), url(../assets/pphoto.jpg);
+																																				    background-size: cover, cover;
+																																				    background-position: center, center;
+																																				    height: 100vh;
+																																				    width: 100%;
+																																				    display: flex;
+																																				    justify-content: center;
+																																				    align-items: center;
+																																				}
+																																				h1 {
+																																				    color: #fff;
+																																				    font-size: 2rem;
+																																				    display: inline-block;
+																																				    padding: 1rem;
+																																				    font-weight: 400;
+																																				    position: relative;
+																																				    opacity: 1;
+																																				    transform: scale(1);
+																																				    transition: transform 0.5s ease, opacity 1s ease;
+																																				}
+																																				.is-loading h1 {
+																																				    transform: scale(0.9);
+																																				    opacity: 0;
+																																				}
+																																				h1:before,
+																																				h1:after {
+																																				    height: 2px;
+																																				    width: 100%;
+																																				    content: "";
+																																				    background: white;
+																																				    display: block;
+																																				    position: absolute;
+																																				    transition: width 0.4s ease;
+																																				    transition-delay: 0.8s;
+																																				}
+																																				h1:before {
+																																				    top: 0;
+																																				    left: 0;
+																																				}
+																																				h1:after {
+																																				    bottom: 0;
+																																				    right: 0;
+																																				}
+																																				.is-loading h1:before,
+																																				.is-loading h1:after {
+																																				    width: 0;
+																																				}
+																																				p {
+																																				    font-size: 1rem;
+																																				    font-weight: 200;
+																																				    color: #fff;
+																																				}
+																																				/*
 ===========================
         portfolio
 ===========================
 */
-
-.portfolio {
-    background-color: #617073;
-    margin: 20% 0 0 0;
-    height: 80vh;
-}
-.portfolio .large-4 {
-    margin: 0 0 0 0;
-    background-color: transparent;
-}
-.portfolio .hover01 {
-    margin: 0 0 5% 0;
-}
-.portfolio h2 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-}
-figure {
-    margin: 15% 0 0 0;
-    padding: 0 0 0 0;
-    overflow: hidden;
-}
-
-/*zoom in*/
-
-.hover01 figure img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-.hover01 figure:hover img {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-}
-
-/* Gray Scale */
-
-.hover12 figure img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-.hover12 figure:hover img {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-}
-
-/*
+																																				
+																																				.portfolio {
+																																				    background: #617073;
+																																				}
+																																				.portfolio h2 {
+																																				    color: #fff;
+																																				    text-align: center;
+																																				    font-size: 2rem;
+																																				    font-weight: 400;
+																																				}
+																																				figure {
+																																				    margin: 0 0 10px 0;
+																																				    padding: 0 0 0 0;
+																																				    background: #fff;
+																																				    overflow: hidden;
+																																				}
+																																				img {
+																																				    height: 40vh;
+																																				    padding: 0 0 10px 0;
+																																				    margin: 0 0 0 0;
+																																				}
+																																				/* Zoom In #1 */
+																																				
+																																				.hover01 figure img {
+																																				    -webkit-transform: scale(1);
+																																				    transform: scale(1);
+																																				    -webkit-transition: .3s ease-in-out;
+																																				    transition: .3s ease-in-out;
+																																				}
+																																				.hover01 figure:hover img {
+																																				    -webkit-transform: scale(1.3);
+																																				    transform: scale(1.3);
+																																				}
+																																				.hover07 figure img {
+																																				    -webkit-filter: blur(3px);
+																																				    filter: blur(3px);
+																																				    -webkit-transition: .3s ease-in-out;
+																																				    transition: .3s ease-in-out;
+																																				}
+																																				.hover07 figure:hover img {
+																																				    -webkit-filter: blur(0);
+																																				    filter: blur(0);
+																																				}
+																																				/*
 ===========================
         footer
 ===========================
 */
-
-.footer {
-    background-color: #171A21;
-    margin: 0 0 0 0;
-    padding: 10% 5% 10% 5%;
-}
-.footer i {
-    padding: 7.5% 3% 7% 3%;
-    color: #617073;
-}
-.footer p {
-    color: #617073;
-    margin-left: 5%;
-    padding: 10% 3% 10% 3%;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-/*
+																																				
+																																				.footer {
+																																				    background-color: #171A21;
+																																				    margin: 0 0 0 0;
+																																				    padding: 10% 5% 10% 5%;
+																																				}
+																																				.footer i {
+																																				    padding: 7.5% 3% 7% 3%;
+																																				    color: #617073;
+																																				}
+																																				.footer p {
+																																				    color: #617073;
+																																				    margin-left: 5%;
+																																				    padding: 10% 3% 10% 3%;
+																																				    font-size: 20px;
+																																				    font-weight: 300;
+																																				}
+																																				/*
 ==========================
         contact me
 ==========================
 */
-
-#contact {
-    background-color: #AD343E;
-}
-form {
-    max-width: 48%;
-    margin: 7% 5% 7% 20%;
-}
-form h5 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 400;
-}
-.feedback-input {
-    color: #171A21;
-    font-weight: 500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: #fff;
-    border: 2px solid #CC6666;
-    transition: all 0.3s;
-    padding: 3%;
-    margin-bottom: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    outline: 0;
-}
-.feedback-input:focus {
-    border: 2px solid #CC4949;
-}
-textarea {
-    height: 150px;
-    line-height: 150%;
-    resize: vertical;
-}
-[type="submit"] {
-    width: 100%;
-    background: #CC6666;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 700;
-}
-[type="submit"]:hover {
-    background: #CC4949;
-}
+																																				
+																																				#contact {
+																																				    background-color: #AD343E;
+																																				}
+																																				form {
+																																				    max-width: 48%;
+																																				    margin: 7% 5% 7% 20%;
+																																				}
+																																				form h5 {
+																																				    color: #fff;
+																																				    font-size: 30px;
+																																				    font-weight: 400;
+																																				}
+																																				.feedback-input {
+																																				    color: #171A21;
+																																				    font-weight: 500;
+																																				    font-size: 18px;
+																																				    border-radius: 5px;
+																																				    line-height: 22px;
+																																				    background-color: #fff;
+																																				    border: 2px solid #CC6666;
+																																				    transition: all 0.3s;
+																																				    padding: 3%;
+																																				    margin-bottom: 15px;
+																																				    width: 100%;
+																																				    box-sizing: border-box;
+																																				    outline: 0;
+																																				}
+																																				.feedback-input:focus {
+																																				    border: 2px solid #CC4949;
+																																				}
+																																				textarea {
+																																				    height: 150px;
+																																				    line-height: 150%;
+																																				    resize: vertical;
+																																				}
+																																				[type="submit"] {
+																																				    width: 100%;
+																																				    background: #CC6666;
+																																				    border-radius: 5px;
+																																				    border: 0;
+																																				    cursor: pointer;
+																																				    color: white;
+																																				    font-size: 24px;
+																																				    padding-top: 10px;
+																																				    padding-bottom: 10px;
+																																				    transition: all 0.3s;
+																																				    margin-top: -4px;
+																																				    font-weight: 700;
+																																				}
+																																				[type="submit"]:hover {
+																																				    background: #CC4949;
+																																				}
