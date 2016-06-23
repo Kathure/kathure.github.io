@@ -33,3 +33,8 @@ $(document).ready(function () {
         stickyNav();
     });
 });
+
+$('document').ready(function () {
+    var msg = $('#message');
+    msg.autosize();
+});
