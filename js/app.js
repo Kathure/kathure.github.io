@@ -15,18 +15,21 @@ $(function () {
 
 
 $(document).ready(function () {
-    setTimeout(function () {
-        $("#landing").removeClass("is-loading");
-    }, 100)
-});
+    var stickyNavTop = $('.navigation').offset().top;
 
-$(document).ready(function () {
-    $(window).bind('scroll', function () {
-        var navHeight = $(window).height() - 70;
-        if ($(window).scrollTop() > navHeight) {
-            $('nav').addClass('fixed');
+    var stickyNav = function () {
+        var scrollTop = $(window).scrollTop();
+
+        if (scrollTop > stickyNavTop) {
+            $('.navigation').addClass('sticky');
         } else {
-            $('nav').removeClass('fixed');
+            $('.navigation').removeClass('sticky');
         }
+    };
+
+    stickyNav();
+
+    $(window).scroll(function () {
+        stickyNav();
     });
 });
