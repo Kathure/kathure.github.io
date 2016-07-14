@@ -20,6 +20,7 @@ body {
 }
 .menu a {
     color: #000;
+    font-family: "Indie Flower", sans-serif;
 }
 .landing {
     background-image: url(../assets/image.jpg);
@@ -29,9 +30,11 @@ body {
 }
 .kathure h2 {
     color: #000;
+    font-family: "Indie Flower", sans-serif;
 }
 .kathure p {
     color: #000;
+    font-family: "Indie Flower", sans-serif;
 }
 .kathure {
     background: rgba(255, 255, 255, 0.6);
@@ -42,13 +45,21 @@ body {
     border-spacing: 5%;
     border: 10px solid #fff;
 }
-.portfolio img {
-    padding-bottom: 10%;
-    padding-top: 10%;
-}
-.rununu {
-    background-color: #F5F5F5;
-}
 ::-webkit-resizer {
     display: none;
+}
+.about {
+    margin: 10%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Indie Flower", sans-serif;
+    color: #000;
+}
+#portfolio {
+    background-color: lightgray;
 }
