@@ -69,3 +69,13 @@ h6 {
     padding-top: 5%;
     padding-bottom: 5%;
 }
+.footer {
+    background-color: lightgray;
+}
+.footer i {
+    color: #fff;
+    padding: 5% 0 5% 5%;
+}
+.footer i:hover {
+    color: black;
+}
