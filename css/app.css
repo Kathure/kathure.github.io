@@ -48,7 +48,7 @@ body {
 ::-webkit-resizer {
     display: none;
 }
-.about {
+#about {
     margin: 10%;
 }
 h1,
